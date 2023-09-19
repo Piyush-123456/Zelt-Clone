@@ -1,0 +1,153 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    position: relative;
+    overflow: hidden;
+}
+#page{
+    height: 100vh;
+    width: 100vw;
+}
+#page1{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #E5E1DC;
+}
+
+canvas{
+    height: 100vh;
+    width: 100vw;
+}
+
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 999;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 3%;
+    border-radius: 20px;
+    position: fixed;
+    height: 10vh;
+    width: 32vw;
+    background-color: #ffffff54;
+    backdrop-filter: blur(5px);
+    padding: 0px 14px;
+
+}
+#nav>a{
+    text-decoration: none;
+    color: black;
+
+}
+#nav>img{
+    width: 12%;
+    margin-bottom: 5px;
+}
+#nav>button{
+    background-color: #ffcd6d;
+    padding: 20px 10px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 600;
+}
+
+#page>h1{
+    font-size: 80px;
+    font-weight: bolder;
+    position: absolute;
+    z-index: 99;
+    text-align: center;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#page>h4{
+    font-size: 25px;
+    position: absolute;
+    z-index: 99;
+    text-align: center;
+    top: 60%;
+    left: 50%;
+    font-weight: 10;
+    color:rgb(158, 152, 152);
+    transform: translate(-50%,-50%);
+    
+}
+#page1>h1{
+    font-family: gilroy;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-size: 80px;
+
+    font-weight: 800; 
+}
+
+#page1>h4{
+    position: absolute;
+    left: 50%;
+    top: 57%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-size: 25px;
+    font-weight: 100; 
+    width: 47%;
+    color:rgb(158, 152, 152);
+}
+
+#page2{
+    height: 100vh;
+    width: 100vw;
+    /* background-color: rebeccapurple; */
+}
+
+
+#page2>h2{
+    position: absolute;
+    top: 4%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    font-family: gilroy;
+    font-weight: 100;
+}
+
+#loop{
+    position: relative;
+    top: 14%;
+    display:ruby-base-container;
+    align-items: center;
+    justify-content: space-between;
+    height:10%;
+    width: 100%;
+    background-color: rebeccapurple;
+}
+#loop>img{
+    position:inherit;
+    animation-name: anim1;
+    animation-duration:10s;
+    animation-timing-function:linear ;
+    animation-iteration-count: infinite;
+}
+@keyframes anim1{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
